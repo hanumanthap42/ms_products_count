@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRDO - MS Products Installation Count</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>DRDO - MS Products Installation Count</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>LAN Drona</th>
+          <th>Standalone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>MS Office</td>
+          <td id="office-lan">0</td>
+          <td id="office-standalone">0</td>
+          <td>
+            <button onclick="addCount('office','lan')">LAN +</button>
+            <button onclick="removeCount('office','lan')">LAN -</button>
+            <button onclick="addCount('office','standalone')">Standalone +</button>
+            <button onclick="removeCount('office','standalone')">Standalone -</button>
+          </td>
+        </tr>
+        <tr>
+          <td>MS Visio</td>
+          <td id="visio-lan">0</td>
+          <td id="visio-standalone">0</td>
+          <td>
+            <button onclick="addCount('visio','lan')">LAN +</button>
+            <button onclick="removeCount('visio','lan')">LAN -</button>
+            <button onclick="addCount('visio','standalone')">Standalone +</button>
+            <button onclick="removeCount('visio','standalone')">Standalone -</button>
+          </td>
+        </tr>
+        <tr>
+          <td>MS Project</td>
+          <td id="project-lan">0</td>
+          <td id="project-standalone">0</td>
+          <td>
+            <button onclick="addCount('project','lan')">LAN +</button>
+            <button onclick="removeCount('project','lan')">LAN -</button>
+            <button onclick="addCount('project','standalone')">Standalone +</button>
+            <button onclick="removeCount('project','standalone')">Standalone -</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Visual Studio</td>
+          <td id="vs-lan">0</td>
+          <td id="vs-standalone">0</td>
+          <td>
+            <button onclick="addCount('vs','lan')">LAN +</button>
+            <button onclick="removeCount('vs','lan')">LAN -</button>
+            <button onclick="addCount('vs','standalone')">Standalone +</button>
+            <button onclick="removeCount('vs','standalone')">Standalone -</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
